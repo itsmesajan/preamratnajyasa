@@ -171,7 +171,8 @@
 
   //navactive responsive
   $(".product_navactive").owlCarousel({
-    autoplay: false,
+    autoplay: true,
+    autoplayTimeout:3000,
     loop: true,
     nav: true,
     items: 4,

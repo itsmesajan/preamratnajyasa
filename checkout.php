@@ -1,9 +1,9 @@
-<!-- <?php
+<?php
 require("includes/common.php");
 if (!isset($_SESSION['email'])) {
-    header('location: index.php');
+  header('location: index.php');
 }
-?> -->
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +17,7 @@ if (!isset($_SESSION['email'])) {
 </head>
 
 <body>
-  <!-- <?php include 'includes/header.php'; ?> -->
+  <?php include 'includes/header.php'; ?>
   <div class="container-fluid" id="content">
     <div class="col-md-12">
       <div class="jumbotron">
@@ -29,8 +29,8 @@ if (!isset($_SESSION['email'])) {
       </div>
     </div>
   </div>
-  <!-- <?php include("includes/footer.php"); -->
-        <!-- ?> -->
+  <?php include("includes/footer.php"); ?>
+
 </body>
 
 </html>

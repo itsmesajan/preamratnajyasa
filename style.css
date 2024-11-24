@@ -116,6 +116,11 @@ ul {
   padding: 0;
 }
 
+.custom-btn{
+  color: #fff;
+  background: #a8741a;
+}
+
 .home_black_version {
   background: #242424;
 }
