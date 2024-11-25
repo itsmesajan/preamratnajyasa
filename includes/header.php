@@ -46,10 +46,10 @@
                                     <ul class="dropdown_links">
                                         <li><a href="#">Checkout</a></li>
                                         <li class="Login">
-                                            <a href="settings.php"> Account</a>
+                                            <a href="settings.php">Account</a>
                                         </li>
                                         <li><a href="cart.html">Shopping Cart</a></li>
-                                        <li><a href="#">Wishlist</a></li>
+                                        <!-- <li><a href="#">Wishlist</a></li> -->
                                         <?php
                                         if ($_SESSION['loggedin']) {
                                         ?>
