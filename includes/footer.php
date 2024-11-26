@@ -7,7 +7,7 @@
                 <h3>About Prem Ratna Jyasa Pasa:</h3>
                 <div class="footer_contact">
                   <p>Address : Tabahal, Kumaripati, Lalitpur</p>
-                  <p>Phone : <a href="tel:(+91)888888885555">(+91)888888885555</a></p>
+                  <p>Phone : <a href="tel:+977 981-8695679">+977 981-8695679</a></p>
                   <p>Email : PremRatnaJyasa@gmail.com</p>
                   <ul>
                     <li><a href="#"><i class="ion-social-facebook"></i></a></li>

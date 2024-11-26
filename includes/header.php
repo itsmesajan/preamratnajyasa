@@ -82,7 +82,7 @@
                             <img src="images/icon/icon_phone.png" alt="">
                         </div>
                         <div class="contact_box">
-                            <p>Inquiry / Helpline : <a href="tel: 1234567894">1234567894</a></p>
+                            <p>Inquiry / Helpline : <a href="tel: +977 981-8695679">+977 981-8695679</a></p>
                         </div>
                     </div>
                 </div>
