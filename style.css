@@ -2389,6 +2389,22 @@ p {
   transition: 0.3s;
   cursor: pointer;
 }
+.modal_added_to_cart form button {
+  background: none;
+  border: 1px solid #212121;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 38px;
+  line-height: 18px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  background: #fff;
+  color: #212121;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
 
 .modal_add_to_cart form button:hover {
   background: #a8741a;
