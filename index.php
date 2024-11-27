@@ -203,8 +203,22 @@ if (isset($_SESSION['email'])) {
                                                                             title="Add to Wishlist"
                                                                             data-toggle="tooltip"><span
                                                                                 class="ion-heart"></span></a></li>
-                                                                    <li class="add_to_cart"><a href="#"
-                                                                            title="Add to Cart">Add to Cart</a></li>
+                                                                    <?php if (!isset($_SESSION['email'])) { ?>
+                                                                        <li class="add_to_cart"><a href="login.php" title="Add to Cart">Buy Now</a></li>
+                                                                        <?php
+                                                                    } else {
+                                                                        //We have created a function to check whether this particular product is added to cart or not.
+                                                                        if (check_if_added_to_cart(1)) { //This is same as if(check_if_added_to_cart != 0)
+                                                                            echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';
+                                                                        } else {
+                                                                        ?>
+                                                                            <li class="add_to_cart"><a href="login.php" title="Add to Cart">Add to cart</a></li>
+                                                                    <?php
+                                                                        }
+                                                                    }
+                                                                    ?>
+                                                                    <!-- <li class="add_to_cart"><a href="#"
+                                                                            title="Add to Cart">Add to Cart</a></li> -->
                                                                     <li><a href="#" title="Compare"><i
                                                                                 class="ion-ios-settings-strong"></i></a>
                                                                     </li>
@@ -268,8 +282,22 @@ if (isset($_SESSION['email'])) {
                                                                             title="Add to Wishlist"
                                                                             data-toggle="tooltip"><span
                                                                                 class="ion-heart"></span></a></li>
-                                                                    <li class="add_to_cart"><a href="#"
-                                                                            title="Add to Cart">Add to Cart</a></li>
+                                                                    <?php if (!isset($_SESSION['email'])) { ?>
+                                                                        <li class="add_to_cart"><a href="login.php" title="Add to Cart">Buy Now</a></li>
+                                                                        <?php
+                                                                    } else {
+                                                                        //We have created a function to check whether this particular product is added to cart or not.
+                                                                        if (check_if_added_to_cart(1)) { //This is same as if(check_if_added_to_cart != 0)
+                                                                            echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';
+                                                                        } else {
+                                                                        ?>
+                                                                            <li class="add_to_cart"><a href="login.php" title="Add to Cart">Add to cart</a></li>
+                                                                    <?php
+                                                                        }
+                                                                    }
+                                                                    ?>
+                                                                    <!-- <li class="add_to_cart"><a href="#"
+                                                                            title="Add to Cart">Add to Cart</a></li> -->
                                                                     <li><a href="#" title="Compare"><i
                                                                                 class="ion-ios-settings-strong"></i></a>
                                                                     </li>
@@ -332,8 +360,22 @@ if (isset($_SESSION['email'])) {
                                                                             title="Add to Wishlist"
                                                                             data-toggle="tooltip"><span
                                                                                 class="ion-heart"></span></a></li>
-                                                                    <li class="add_to_cart"><a href="#"
-                                                                            title="Add to Cart">Add to Cart</a></li>
+                                                                    <?php if (!isset($_SESSION['email'])) { ?>
+                                                                        <li class="add_to_cart"><a href="login.php" title="Add to Cart">Buy Now</a></li>
+                                                                        <?php
+                                                                    } else {
+                                                                        //We have created a function to check whether this particular product is added to cart or not.
+                                                                        if (check_if_added_to_cart(1)) { //This is same as if(check_if_added_to_cart != 0)
+                                                                            echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';
+                                                                        } else {
+                                                                        ?>
+                                                                            <li class="add_to_cart"><a href="login.php" title="Add to Cart">Add to cart</a></li>
+                                                                    <?php
+                                                                        }
+                                                                    }
+                                                                    ?>
+                                                                    <!-- <li class="add_to_cart"><a href="#"
+                                                                            title="Add to Cart">Add to Cart</a></li> -->
                                                                     <li><a href="#" title="Compare"><i
                                                                                 class="ion-ios-settings-strong"></i></a>
                                                                     </li>
@@ -396,8 +438,22 @@ if (isset($_SESSION['email'])) {
                                                                             title="Add to Wishlist"
                                                                             data-toggle="tooltip"><span
                                                                                 class="ion-heart"></span></a></li>
-                                                                    <li class="add_to_cart"><a href="#"
-                                                                            title="Add to Cart">Add to Cart</a></li>
+                                                                    <?php if (!isset($_SESSION['email'])) { ?>
+                                                                        <li class="add_to_cart"><a href="login.php" title="Add to Cart">Buy Now</a></li>
+                                                                        <?php
+                                                                    } else {
+                                                                        //We have created a function to check whether this particular product is added to cart or not.
+                                                                        if (check_if_added_to_cart(1)) { //This is same as if(check_if_added_to_cart != 0)
+                                                                            echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';
+                                                                        } else {
+                                                                        ?>
+                                                                            <li class="add_to_cart"><a href="login.php" title="Add to Cart">Add to cart</a></li>
+                                                                    <?php
+                                                                        }
+                                                                    }
+                                                                    ?>
+                                                                    <!-- <li class="add_to_cart"><a href="#"
+                                                                            title="Add to Cart">Add to Cart</a></li> -->
                                                                     <li><a href="#" title="Compare"><i
                                                                                 class="ion-ios-settings-strong"></i></a>
                                                                     </li>
@@ -460,8 +516,22 @@ if (isset($_SESSION['email'])) {
                                                                             title="Add to Wishlist"
                                                                             data-toggle="tooltip"><span
                                                                                 class="ion-heart"></span></a></li>
-                                                                    <li class="add_to_cart"><a href="#"
-                                                                            title="Add to Cart">Add to Cart</a></li>
+                                                                    <?php if (!isset($_SESSION['email'])) { ?>
+                                                                        <li class="add_to_cart"><a href="login.php" title="Add to Cart">Buy Now</a></li>
+                                                                        <?php
+                                                                    } else {
+                                                                        //We have created a function to check whether this particular product is added to cart or not.
+                                                                        if (check_if_added_to_cart(1)) { //This is same as if(check_if_added_to_cart != 0)
+                                                                            echo '<a href="#" class="btn btn-block btn-success" disabled>Added to cart</a>';
+                                                                        } else {
+                                                                        ?>
+                                                                            <li class="add_to_cart"><a href="login.php" title="Add to Cart">Add to cart</a></li>
+                                                                    <?php
+                                                                        }
+                                                                    }
+                                                                    ?>
+                                                                    <!-- <li class="add_to_cart"><a href="#"
+                                                                            title="Add to Cart">Add to Cart</a></li> -->
                                                                     <li><a href="#" title="Compare"><i
                                                                                 class="ion-ios-settings-strong"></i></a>
                                                                     </li>
