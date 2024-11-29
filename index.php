@@ -38,7 +38,7 @@ if (isset($_SESSION['email'])) {
                                 <h1>Necklace</h1>
                                 <span>22 Carat gold necklace for wedding</span>
                                 <p class="slider_price">starting at <span>Rs. 75,999</span></p>
-                                <a href="#" class="button">Shop Now</a>
+                                <a href="product.php" class="button">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -2510,7 +2510,7 @@ if (isset($_SESSION['email'])) {
                             <p>Sale Off 20% All Products</p>
                             <h2>New Trending Collection</h2>
                             <span>Best Design makes you more special.</span>
-                            <a href="#">Shop Now</a>
+                            <a href="product.php">Shop Now</a>
                         </div>
                     </div>
                 </div>

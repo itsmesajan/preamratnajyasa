@@ -184,29 +184,17 @@
                         <div class="main_menu">
                             <nav>
                                 <ul>
-                                    <li class="active">
-                                        <a href="#">Home <i class="ion-chevron-down"></i></a>
-                                        <ul class="sub_menu">
-                                            <li><a href="#">Banner</a></li>
-                                            <li><a href="#">Featured</a></li>
-                                            <li><a href="#">Collection</a></li>
-                                            <li><a href="#">Best Selling</a></li>
-                                            <li><a href="#">News</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                        </ul>
+                                    <li class="<?php echo ($page == "index.php" ? "active" : "") ?>">
+                                        <a href="index.php">Home</a>
                                     </li>
-                                    <li>
+                                    <li class="<?php echo ($page == "product.php" ? "active" : "") ?>">
                                         <a href="product.php">Product</a>
                                     </li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li>
-                                        <a href="#">Special Collection <i class="ion-chevron-down"></i></a>
-                                        <ul class="sub_menu pages">
-                                            <li><a href="#">Gemstone</a></li>
-                                            <li><a href="#">Gold</a></li>
-                                            <li><a href="#">Rose Gold</a></li>
-                                            <li><a href="#">Silver</a></li>
-                                        </ul>
+                                    <li class="<?php echo ($page == "aboutus" ? "active" : "") ?>">
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li class="<?php echo ($page == "contactus" ? "active" : "") ?>">
+                                        <a href="#">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>
