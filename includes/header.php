@@ -184,16 +184,23 @@
                         <div class="main_menu">
                             <nav>
                                 <ul>
-                                    <li class="<?php echo ($page == "index.php" ? "active" : "") ?>">
+                                    <?php
+                                    $pathInfo = $_SERVER['REQUEST_URI'];
+                                    $segments = explode('/', trim($pathInfo, '/')); // e.g., "/category/article-title"
+                                    $path = end($segments);
+                                    ?>
+
+
+                                    <li class="<?php echo ($path == "index.php" ? "active" : "") ?>">
                                         <a href="index.php">Home</a>
                                     </li>
-                                    <li class="<?php echo ($page == "product.php" ? "active" : "") ?>">
+                                    <li class="<?php echo ($path == "product.php" ? "active" : "") ?>">
                                         <a href="product.php">Product</a>
                                     </li>
-                                    <li class="<?php echo ($page == "aboutus" ? "active" : "") ?>">
+                                    <li class="<?php echo ($path == "aboutus" ? "active" : "") ?>">
                                         <a href="#">About Us</a>
                                     </li>
-                                    <li class="<?php echo ($page == "contactus" ? "active" : "") ?>">
+                                    <li class="<?php echo ($path == "contactus" ? "active" : "") ?>">
                                         <a href="#">Contact Us</a>
                                     </li>
                                 </ul>

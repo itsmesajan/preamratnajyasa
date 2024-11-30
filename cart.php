@@ -51,7 +51,7 @@ if (!isset($_SESSION['email'])) {
               <td>Total</td>
               <td>Rs " . $sum . "</td>
               <td>
-              <a href='success.php?itemsid=" . $id . "' class='btn btn-primary'>Confirm Order</a>
+              <a href='success.php?itemsid=" . $id . "' class='cart_button checkout'>Confirm Order</a>
               </td>
               </tr>";
               ?>

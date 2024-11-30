@@ -1588,6 +1588,13 @@ ul {
   text-transform: capitalize;
   font-size: 12px;
 }
+.action_links ul li.added_to_cart a {
+  line-height: 35px;
+  padding: 0 18px;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 12px;
+}
 
 .action_links ul li a {
   line-height: 37px;
@@ -1605,6 +1612,9 @@ ul {
 }
 
 .product_black_section .action_links ul li.add_to_cart a {
+  font-family: "Trebuchet MS", sans-serif;
+}
+.product_black_section .action_links ul li.added_to_cart a {
   font-family: "Trebuchet MS", sans-serif;
 }
 
@@ -2364,7 +2374,19 @@ p {
   border-bottom: 1px solid ebebeb;
   padding-bottom: 30px;
 }
+.modal_added_to_cart {
+  border-bottom: 1px solid ebebeb;
+  padding-bottom: 30px;
+}
 .modal_add_to_cart form input {
+  width: 80px;
+  border: 1px solid #ebebeb;
+  background: none;
+  padding: 0 17px;
+  border-radius: 5px;
+  height: 40px;
+}
+.modal_added_to_cart form input {
   width: 80px;
   border: 1px solid #ebebeb;
   background: none;
@@ -2399,8 +2421,9 @@ p {
   line-height: 18px;
   padding: 10px 15px;
   text-transform: uppercase;
-  background: #fff;
-  color: #212121;
+  background: #a8741a;
+  color: #fff;
+  border-color: #a8741a;
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
