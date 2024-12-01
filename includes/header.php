@@ -198,7 +198,7 @@
                                         <a href="product.php">Product</a>
                                     </li>
                                     <li class="<?php echo ($path == "aboutus" ? "active" : "") ?>">
-                                        <a href="#">About Us</a>
+                                        <a href="aboutus.php">About Us</a>
                                     </li>
                                     <li class="<?php echo ($path == "contactus" ? "active" : "") ?>">
                                         <a href="#">Contact Us</a>
