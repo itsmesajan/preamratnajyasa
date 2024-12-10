@@ -25,7 +25,7 @@ if (!isset($_SESSION['email'])) {
           <?php
           $sum = 0;
           $id = '';
-          $user_id = $_SESSION['user_id'];
+          $user_id = !empty($_SESSION['user_id']) ? $_SESSION['user_id'] : '';
           $query = "SELECT items.price AS Price, items.id As id, items.name AS Name FROM user_item JOIN items ON user_item.item_id = items.id WHERE user_item.user_id='$user_id' and `status`=1";
           $result = mysqli_query($con, $query) or die($mysqli_error($con));
           if (mysqli_num_rows($result) >= 1) {
