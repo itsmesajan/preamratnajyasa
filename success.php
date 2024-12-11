@@ -16,28 +16,40 @@ mysqli_query($con, $query) or die($mysqli_error($con));
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Success | Life Style Store</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="logo/logo.jpg" type="image/x-icon">
+  <!-- CSS only -->
+  <?php
+  include('includes/style-links.php');
+  ?>
 </head>
 
 <body>
-  <?php include 'header.php'; ?>
-
-  <div class="container-fluid" id="content">
-    <div class="col-md-12">
-      <div class="col-lg-4 col-md-6 ">
-        <img src="img/thanks.png" style="float: left;">
+  <div class="home_black_version">
+    <?php
+    include('includes/header.php');
+    include 'includes/check-if-added.php';
+    ?>
+    <section class="banner_fullwidth black_fullwidth">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="banner_text">
+              <h2 align="center">YAY!! Your order is confirmed. <br>Thank you for shopping with us.</h2>
+              <span>Best Design makes you more special.</span>
+              <a href="product.php">Shop More</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="jumbotron">
-        <h3 align="center">YAY!! Your order is confirmed. Thank you for shopping with us.</h3>
-        <hr>
-        <p align="center">Click <a href="products.php">here</a> to purchase any other item.</p>
-      </div>
-    </div>
+    </section>
+    <?php include("includes/footer.php");
+    ?>
   </div>
-  <?php include("includes/footer.php");
+  <?php
+  include('includes/script-links.php');
   ?>
 </body>
 
