@@ -1,3 +1,9 @@
+<?php
+require("includes/common.php");
+if (!isset($_SESSION['email'])) {
+    header('locationS: index.php');
+}
+?>
 <header class="header_area header_black">
     <!-- header top starts -->
     <div class="header_top">
@@ -107,9 +113,20 @@
                         <!-- <div class="wishlist_btn">
                             <a href="#"><i class="ion-heart"></i></a>
                         </div> -->
+                        <?php
+                        $sum = 0;
+                        $id = '';
+                        $user_id = !empty($_SESSION['user_id']) ? $_SESSION['user_id'] : '';
+                        $query = "SELECT items.price AS Price, items.id As id, items.name AS Name FROM user_item JOIN items ON user_item.item_id = items.id WHERE user_item.user_id='$user_id' and `status`=1";
+                        $result = mysqli_query($con, $query) or die($mysqli_error($con));
+                        if (mysqli_num_rows($result) >= 1) {
+                            while ($row = mysqli_fetch_array($result)) {
+                                $sum += $row["Price"];
+                            }
+                        }
+                        ?>
                         <div class="cart_link">
-                            <a href="#"><i class="ion-android-cart"></i><span class="cart_text_quantity">Rs.
-                                    67,598</span><i class="ion-chevron-down"></i></a>
+                            <a href="#"><i class="ion-android-cart"></i><span class="cart_text_quantity">Rs.<?php echo $sum ?></span><i class="ion-chevron-down"></i></a>
                             <span class="cart_quantity">2</span>
 
                             <!-- mini cart -->
@@ -150,7 +167,7 @@
                                 </div>
                                 <div class="cart_total">
                                     <span>Subtotal : </span>
-                                    <span>Rs. 67,598</span>
+                                    <span>Rs. <?php echo $sum ?></span>
                                 </div>
                                 <div class="mini_cart_footer">
                                     <div class="cart_button view_cart">
