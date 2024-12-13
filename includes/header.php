@@ -119,15 +119,31 @@ if (!isset($_SESSION['email'])) {
                         $user_id = !empty($_SESSION['user_id']) ? $_SESSION['user_id'] : '';
                         $query = "SELECT items.price AS Price, items.id As id, items.name AS Name FROM user_item JOIN items ON user_item.item_id = items.id WHERE user_item.user_id='$user_id' and `status`=1";
                         $result = mysqli_query($con, $query) or die($mysqli_error($con));
+                        $cart_items = mysqli_num_rows($result);
+                        $cart_product_item = '';
                         if (mysqli_num_rows($result) >= 1) {
                             while ($row = mysqli_fetch_array($result)) {
                                 $sum += $row["Price"];
+                                $cart_product_item .= '
+                                <div class="cart_item">
+                                    <div class="cart_img">
+                                        <a href="#"><img src="images/nav-product/product.jpg" alt=""></a>
+                                    </div>
+                                    <div class="cart_info">
+                                        <a href="#">' . $row["Name"] . '</a>
+                                        <span class="price_cart">Rs. ' . $row["Price"] . ' </span>
+                                    </div>
+                                    <div class="cart_remove">
+                                        <a href="cart-remove.php?id=' . $row['id'] . '"><i class="ion-android-close"></i></a>
+                                    </div>
+                                </div>
+                                ';
                             }
                         }
                         ?>
                         <div class="cart_link">
                             <a href="#"><i class="ion-android-cart"></i><span class="cart_text_quantity">Rs.<?php echo $sum ?></span><i class="ion-chevron-down"></i></a>
-                            <span class="cart_quantity">2</span>
+                            <span class="cart_quantity"><?= $cart_items ?></span>
 
                             <!-- mini cart -->
                             <div class="mini_cart">
@@ -139,32 +155,8 @@ if (!isset($_SESSION['email'])) {
                                         <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
                                     </div>
                                 </div>
-                                <div class="cart_item">
-                                    <div class="cart_img">
-                                        <a href="#"><img src="images/nav-product/product.jpg" alt=""></a>
-                                    </div>
-                                    <div class="cart_info">
-                                        <a href="#">Earings</a>
-                                        <span class="quantity">Qty : 1</span>
-                                        <span class="price_cart">Rs. 54,599</span>
-                                    </div>
-                                    <div class="cart_remove">
-                                        <a href="#"><i class="ion-android-close"></i></a>
-                                    </div>
-                                </div>
-                                <div class="cart_item">
-                                    <div class="cart_img">
-                                        <a href="#"><img src="images/nav-product/product2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="cart_info">
-                                        <a href="#">Bracelet</a>
-                                        <span class="quantity">Qty : 1</span>
-                                        <span class="price_cart">Rs. 12,999</span>
-                                    </div>
-                                    <div class="cart_remove">
-                                        <a href="#"><i class="ion-android-close"></i></a>
-                                    </div>
-                                </div>
+                                <?= $cart_product_item ?>
+
                                 <div class="cart_total">
                                     <span>Subtotal : </span>
                                     <span>Rs. <?php echo $sum ?></span>
