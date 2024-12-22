@@ -70,7 +70,7 @@
                   </div>
                   <div class="simple_product_items">
                     <div class="simple_product_thumb">
-                      <a href="#"><img src="images/product/28.jpg" alt=""></a>
+                      <a href="./product.php"><img src="images/product/28.jpg" alt=""></a>
                     </div>
                     <div class="simple_product_content">
                       <div class="tag_cate">

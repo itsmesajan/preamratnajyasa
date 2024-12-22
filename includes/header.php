@@ -206,11 +206,11 @@ if (!isset($_SESSION['email'])) {
                                     <li class="<?php echo ($path == "product.php" ? "active" : "") ?>">
                                         <a href="product.php">Product</a>
                                     </li>
-                                    <li class="<?php echo ($path == "aboutus" ? "active" : "") ?>">
+                                    <li class="<?php echo ($path == "aboutus.php" ? "active" : "") ?>">
                                         <a href="aboutus.php">About Us</a>
                                     </li>
-                                    <li class="<?php echo ($path == "contactus" ? "active" : "") ?>">
-                                        <a href="#">Contact Us</a>
+                                    <li class="<?php echo ($path == "contactus.php" ? "active" : "") ?>">
+                                        <a href="contactus.php">Contact Us</a>
                                     </li>
                                 </ul>
                             </nav>

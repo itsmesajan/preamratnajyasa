@@ -9,7 +9,7 @@ if (isset($_SESSION['email'])) {
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Signup | Life Style Store</title>
+    <title>Signup</title>
 
     <?php
     include('includes/style-links.php');
@@ -31,7 +31,7 @@ if (isset($_SESSION['email'])) {
                             <input type="email" class="form-control" placeholder=" Enter a valid Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="e-mail" required="true"><?php if (isset($_GET['m1'])) echo $_GET['m1']; ?>
                         </div>
                         <div class="form-group mb-3">
-                            <input type="password" class="form-control" placeholder="Password" title="Password must be 8 characters including 1 uppercase letter, 1 lowercase letter and numeric characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" required="true">
+                            <input type="password" class="form-control" placeholder="Password" title="Password must be 8 characters including 1 uppercase letter, 1 lowercase letter and numeric characters" name="password" required="true">
                         </div>
                         <div class="form-group mb-3">
                             <input type="text" class="form-control" placeholder="Contact (ex. 8444844863)" maxlength="10" size="10" name="contact" required="true"><?php if (isset($_GET['m2'])) echo $_GET['m2']; ?>

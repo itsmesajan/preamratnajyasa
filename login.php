@@ -26,7 +26,7 @@ if (isset($_SESSION['email'])) {
                 <div class="col-lg-3 col-md-3 mx-auto">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h4>LOGIN</h4>
+                            <h2 class="mb-4">LOGIN</h2>
                         </div>
                         <div class="panel-body">
                             <p class="text-warning"><i>Login to make a purchase</i>

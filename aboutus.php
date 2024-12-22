@@ -7,7 +7,7 @@ include('includes/common.php');
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prem Ratna Jyasa Pasa:</title>
+  <title>About Us</title>
   <link rel="shortcut icon" href="logo/logo.jpg" type="image/x-icon">
   <!-- CSS only -->
   <?php
@@ -23,21 +23,22 @@ include('includes/common.php');
       include('includes/header.php');
       include 'includes/check-if-added.php';
       ?>
-      <div class="container" id="content">
-        <div class="col-lg-5 col-md-5 col-sm-12">
-          <div class="logo">
-            <a href="index.php"><img src="logo/logo.png" alt=""></a>
-          </div>
-        </div>
-        <div class="modal_right" align="justify">
-          <h3><mark>WHO WE ARE</mark></h3><br>
-          <p id="p1">Lifestyle store is a recognized leader in the ecommerce industry, with a steadfast commitment to success and a record of achievement that continues a tradition of delivering excellence.<br><br>The company was founded in 2015 by Vishwadutt M S to ease the process of ordering various items. From those early days with just one employee, Lifestyle Store now has more than 10000 employees, serving thousands of customers. <br><br>Lifestyle Store is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking.<br><br>
-          <h4><mark>Vision</mark></h4>To make the world a more stylish, colorful and happier place.<br><br>
-          </p>
+      <div class="container">
+        <div class="row mt-5"">
+            <div class=" col-12">
+          <h3 align="center" style="color: white;">WHO WE ARE</h3><br>
+          <p align="center">Welcome to Prem Ratna Jyasa, where timeless elegance meets masterful craftsmanship. Rooted in tradition and inspired by modern artistry, we take pride in offering exquisite jewellery pieces that celebrate life's most cherished moments.
+
+            At Prem Ratna Jyasa, every gem tells a story and every design reflects our commitment to excellence. From radiant gold ornaments to dazzling diamond creations and vibrant gemstone masterpieces, each piece is crafted with unparalleled attention to detail and a passion for perfection.
+
+            We believe jewellery is more than just an accessory—it's a symbol of love, culture, and individuality. Whether you’re searching for the perfect gift, marking a special occasion, or simply indulging in something beautiful, our collections are designed to inspire and captivate.
+
+            With a legacy of trust and a vision for innovation, Prem Ratna Jyasa is your partner in making memories that shine forever. Explore our world of artistry and let us help you find the perfect treasure to match your unique style and spirit.
+
+            Experience the brilliance of beauty with Prem Ratna Jyasa.</p>
         </div>
       </div>
-    </div>
-    <?php include('includes/footer.php') ?>
+      <?php include('includes/footer.php') ?>
     </div>
 
     <?php
