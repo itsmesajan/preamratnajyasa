@@ -54,7 +54,7 @@ if (!isset($_SESSION['email'])) {
                                         <li class="Login">
                                             <a href="settings.php">Account</a>
                                         </li>
-                                        <li><a href="cart.html">Shopping Cart</a></li>
+                                        <li><a href="cart.php">Shopping Cart</a></li>
                                         <!-- <li><a href="#">Wishlist</a></li> -->
                                         <?php
                                         if ($_SESSION['loggedin']) {

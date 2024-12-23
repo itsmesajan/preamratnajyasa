@@ -9,7 +9,8 @@ if (!isset($_SESSION['email'])) {
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cart | Life Style Store</title>
+  <link rel="shortcut icon" href="logo/logo.jpg" type="image/x-icon">
+  <title>Cart</title>
 
   <?php include 'includes/style-links.php' ?>
 </head>

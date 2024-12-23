@@ -10,8 +10,8 @@ if (isset($_SESSION['email'])) {
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Login | Life Style Store</title>
+    <link rel="shortcut icon" href="logo/logo.jpg" type="image/x-icon">
+    <title>Login</title>
 
     <?php
     include('includes/style-links.php');
