@@ -23,7 +23,7 @@ if (isset($_SESSION['email'])) {
 <body>
     <div class="home_black_version">
         <?php
-        include('includes/header.php');
+        include 'includes/header.php';
         include 'includes/check-if-added.php';
         ?>
 
