@@ -1,4 +1,5 @@
 <?php
+ob_start(); // Optional but helpful
 session_start();
 if (isset($_SESSION['email'])) {
     $_SESSION['loggedin'] = true;
