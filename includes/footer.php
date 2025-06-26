@@ -95,7 +95,16 @@
           <div class="row">
             <div class="col-12">
               <div class="copyright_area">
-                <p>Copyright &copy; 2024 <a href="#">Prem Ratna Jyasa Pasa:</a> All rights Reserved.</p>
+                <?php
+                $year = date('Y');
+                $copyrightText =
+                  isset($siteRegulars) && is_object($siteRegulars) && isset($siteRegulars->copyright)
+                  ? str_replace('{year}', $year, $siteRegulars->copyright)
+                  : "© $year Prem Ratna Jyasa Pasa: All rights reserved.";
+
+                echo '<p>' . $copyrightText .
+                  ' Developed by <a href="https://maharjan-sajan.com.np/" target="_blank">Sajan Maharjan</a></p>';
+                ?>
                 <img src="images/icon/papyel2.png" alt="">
               </div>
             </div>

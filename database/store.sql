@@ -28,6 +28,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `items`
 --
 
+-- Safe to import multiple times without conflict
+
+DROP TABLE IF EXISTS `user_item`;
+DROP TABLE IF EXISTS `items`;
+DROP TABLE IF EXISTS `users`;
+
+
 CREATE TABLE `items` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -38,19 +45,20 @@ CREATE TABLE `items` (
 -- Dumping data for table `items`
 --
 
+
 INSERT INTO `items` (`id`, `name`, `price`) VALUES
-(1, 'Canon EOS', 36000),
-(2, 'Nikon DSLR', 40000),
-(3, 'Sony DSLR', 45000),
-(4, 'Olympus DSLR', 50000),
-(5, 'Titan Model #301', 13000),
-(6, 'Titan Model #201', 3000),
-(7, 'HMT Milan', 8000),
-(8, 'Faber Luba #111', 18000),
-(9, 'H&W', 800),
-(10, 'Luis Phil', 1000),
-(11, 'John Zok', 1500),
-(12, 'Jhalsani', 1300);
+(1, 'Gold Ring', 36000),
+(2, 'Silver Necklace', 40000),
+(3, 'Diamond Earrings', 45000),
+(4, 'Platinum Bracelet', 50000),
+(5, 'Ruby Pendant', 13000),
+(6, 'Pearl Necklace', 3000),
+(7, 'Emerald Bangle', 8000),
+(8, 'Sapphire Chain', 18000),
+(9, 'Anklet', 800),
+(10, 'Gold Chain', 1000),
+(11, 'Nose Pin', 1500),
+(12, 'Toe Ring', 1300);
 
 -- --------------------------------------------------------
 
@@ -90,8 +98,8 @@ CREATE TABLE `user_item` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `item_id` int(11) NOT NULL,
-  `status` enum('Added to cart','Confirmed','','') NOT NULL,
-  `date_time` datetime NOT NULL DEFAULT current_timestamp()
+  `status` enum('Added to cart','Confirmed') NOT NULL,
+  `date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
