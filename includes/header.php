@@ -1,6 +1,7 @@
 <?php
 require "includes/common.php";
-if (!isset($_SESSION['email'])) {
+$current_page = basename($_SERVER['PHP_SELF']);
+if (!isset($_SESSION['email']) && $current_page !== 'index.php') {
     header('Location: index.php');
     exit();
 }
