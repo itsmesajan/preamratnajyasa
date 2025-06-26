@@ -1,11 +1,10 @@
-# Use an official PHP image from Docker Hub
-FROM php:8.1-apache
+FROM php:8.2-apache
 
-# Copy all files to the container's web root
+# Install mysqli extension
+RUN docker-php-ext-install mysqli
+
+# Copy project files to Apache's root folder
 COPY . /var/www/html/
 
-# Give permissions (optional)
-RUN chown -R www-data:www-data /var/www/html
-
-# Expose port 80
+# Expose default port
 EXPOSE 80

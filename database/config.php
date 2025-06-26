@@ -1,0 +1,1 @@
+$db = new mysqli("localhost", "user", "pass", "dbname");
