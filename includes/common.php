@@ -1,4 +1,7 @@
 <?php
+ob_start(); // Start output buffering
+session_start(); // Start session handling
+
 $host = getenv('DB_HOST');
 $user = getenv('DB_USER');
 $pass = getenv('DB_PASS');
