@@ -1,6 +1,8 @@
 <?php
-ob_start(); // Start output buffering
-session_start(); // Start session handling
+ob_start(); // Output buffering starts before any output
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 $host = getenv('DB_HOST');
 $user = getenv('DB_USER');
