@@ -28,13 +28,6 @@ SET time_zone = "+00:00";
 -- Table structure for table `items`
 --
 
--- Safe to import multiple times without conflict
-
-DROP TABLE IF EXISTS `user_item`;
-DROP TABLE IF EXISTS `items`;
-DROP TABLE IF EXISTS `users`;
-
-
 CREATE TABLE `items` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -101,7 +94,6 @@ CREATE TABLE `user_item` (
   `status` enum('Added to cart','Confirmed') NOT NULL,
   `date_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 --
 -- Dumping data for table `user_item`
 --
